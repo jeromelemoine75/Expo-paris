@@ -25,3 +25,14 @@ body,button,input,select{font-family:'Outfit',sans-serif}
 .nav button{transition:color .2s}
 .tile:focus-visible,.nav button:focus-visible,.filters button:focus-visible{outline:2px solid white;outline-offset:4px}
 @media(min-width:650px){.hero .art{aspect-ratio:1.8}}
+
+/* V3.1 — soft corners and restrained scroll choreography */
+.art{border-radius:5px;overflow:hidden}
+.search,.artist,.link{border-radius:5px}
+.tile{transform:translate3d(0,12px,0);opacity:.86;transition:transform .75s cubic-bezier(.2,.75,.2,1),opacity .75s ease;will-change:transform}
+.tile.is-visible{transform:translate3d(0,0,0);opacity:1}
+.tile .art{transition:box-shadow .5s ease}
+.tile:active .art{transform:scale(.995)}
+.tile:nth-child(2n){transition-delay:65ms}
+@media(hover:hover){.tile:hover .art{box-shadow:0 12px 30px rgba(0,0,0,.2)}}
+@media(prefers-reduced-motion:reduce){.tile,.tile.is-visible,.art img{opacity:1;transform:none;transition:none!important;animation:none!important}}
