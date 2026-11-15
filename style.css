@@ -67,3 +67,13 @@ body,button,input,select{font-family:'Outfit',sans-serif}
 .search{border-radius:12px;padding:16px}
 .link{border-radius:12px}
 @media(prefers-reduced-motion:reduce){.tile,.tile.is-visible{opacity:1;transform:none!important;transition:none!important}.tile .art img{transform:none!important;transition:none!important}}
+
+/* EXPO. editorial palette */
+.logo{color:#f0c7d6;text-shadow:0 0 35px rgba(240,199,214,.08)}
+.art-editorial{background:#222!important;position:relative}
+.art-editorial:before{content:"";position:absolute;inset:-35%;background:radial-gradient(ellipse at 32% 30%,rgba(242,183,208,.24),transparent 45%),radial-gradient(ellipse at 72% 80%,rgba(131,102,155,.23),transparent 55%);transform:rotate(-14deg)}
+.art-editorial span{font-size:clamp(20px,4vw,40px);line-height:1.02;letter-spacing:-1.2px;word-break:normal;overflow-wrap:anywhere;padding:24px!important;text-align:left;align-self:center;width:100%;font-weight:600}
+.hero .art-editorial span{font-size:clamp(37px,8vw,75px);letter-spacing:-2.5px;max-width:85%}
+.art-editorial em{color:#f2d3df}
+.art-credit{position:absolute;bottom:11px;right:11px;font-size:8px;max-width:55%;text-align:right;z-index:3;color:white;text-shadow:0 1px 5px #000}
+.art.has-image span{display:none}
