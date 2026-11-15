@@ -68,5 +68,4 @@ body,button,input,select{font-family:'Outfit',sans-serif}
 .link{border-radius:12px}
 @media(prefers-reduced-motion:reduce){.tile,.tile.is-visible{opacity:1;transform:none!important;transition:none!important}.tile .art img{transform:none!important;transition:none!important}}
 
-/* EXPO. pale pink wordmark */
-.logo{color:#f0c7d6;text-shadow:0 0 35px rgba(240,199,214,.08)}
+.logo{color:#f0c7d6!important}
